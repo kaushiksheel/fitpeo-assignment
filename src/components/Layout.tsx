@@ -10,7 +10,7 @@ const Layout = ({ children }: { children: ReactNode }) => {
       {<Sidebar isOpen={isOpen} setIsOpen={setIsOpen} />}
       <div className="relative flex flex-1 flex-col overflow-y-auto overflow-x-hidden lg:ml-20">
         <Navbar setIsOpen={setIsOpen} />
-        <main className="w-full overflow-y-auto p-2 px-5">{children}</main>
+        <main className="w-full overflow-y-auto px-5 lg:px-5 lg:py-2">{children}</main>
       </div>
     </div>
   );
