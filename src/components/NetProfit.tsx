@@ -11,7 +11,7 @@ const NetProfit = () => {
       <div className="flex items-center justify-between">
         <div className="flex h-full flex-col gap-y-[22px]">
           <h2>Net Profit</h2>
-          <h3 className="text-3xl font-semibold">
+          <h3 className="text-3xl font-bold">
             $
             <NumberTicker value={6759.25} direction="up" />
           </h3>
