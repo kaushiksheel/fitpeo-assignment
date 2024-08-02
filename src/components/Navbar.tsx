@@ -50,7 +50,7 @@ const Navbar = ({ setIsOpen }: { setIsOpen: (isOpen: boolean) => void }) => {
           <img
             src="https://images.unsplash.com/photo-1494790108377-be9c29b29330?w=800&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTR8fHNtaWxpbmclMjBtb2RlbHxlbnwwfHwwfHx8MA%3D%3D"
             alt="a smiling model"
-            className="ring-primary size-10 cursor-pointer rounded-full object-cover transition-all hover:ring-2"
+            className="size-10 cursor-pointer rounded-full object-cover ring-[#7094fd] transition-all hover:ring-2"
           />
         </div>
       </nav>

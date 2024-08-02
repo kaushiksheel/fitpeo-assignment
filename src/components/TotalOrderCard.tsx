@@ -2,14 +2,16 @@ import React from "react";
 import { Card } from "./Card";
 
 import { MdArrowDropDown, MdArrowDropUp } from "react-icons/md";
+import NumberTicker from "./NumberTicker";
 
 interface ITotalOrderCardProps {
   title: string;
   count: number;
   type: "profit" | "loss";
-  typeCount: string;
+  typeCount: number;
   icon: React.ReactNode;
   iconBgColor: string;
+  isRevenue?: boolean;
 }
 const TotalOrderCard = ({
   title,
@@ -18,6 +20,7 @@ const TotalOrderCard = ({
   icon,
   typeCount,
   iconBgColor,
+  isRevenue = false,
 }: ITotalOrderCardProps) => {
   return (
     <Card>
@@ -35,7 +38,13 @@ const TotalOrderCard = ({
           </div>
 
           <div className="flex items-center justify-between">
-            <p className="text-3xl font-semibold text-white">{typeCount}</p>
+            <p className="text-3xl font-semibold text-white">
+              {isRevenue ? (
+                <>${<NumberTicker value={typeCount} direction="up" />}k</>
+              ) : (
+                <NumberTicker value={typeCount} direction="up" />
+              )}
+            </p>
             <div className="flex items-center space-x-0.5">
               {type == "profit" ? (
                 <MdArrowDropUp className="size-5 text-emerald-500" />

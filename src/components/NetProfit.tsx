@@ -2,6 +2,7 @@ import { CircularProgressbar } from "react-circular-progressbar";
 import "react-circular-progressbar/dist/styles.css";
 import { Card } from "./Card";
 import { MdArrowDropUp } from "react-icons/md";
+import NumberTicker from "./NumberTicker";
 
 const NetProfit = () => {
   const percentage = 70;
@@ -10,7 +11,10 @@ const NetProfit = () => {
       <div className="flex items-center justify-between">
         <div className="flex h-full flex-col gap-y-[22px]">
           <h2>Net Profit</h2>
-          <h3 className="text-3xl font-semibold">$6759.25</h3>
+          <h3 className="text-3xl font-semibold">
+            $
+            <NumberTicker value={6759.25} direction="up" />
+          </h3>
           <div className="flex items-center space-x-2 text-[#70E059]">
             <MdArrowDropUp className="size-5" />
             3%
