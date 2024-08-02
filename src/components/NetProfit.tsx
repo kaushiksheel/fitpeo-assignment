@@ -20,12 +20,21 @@ const NetProfit = () => {
             3%
           </div>
         </div>
-        <div className="h-28 w-28">
+        <div className="relative h-32 w-32">
           <CircularProgressbar
             value={percentage}
-            text={`${percentage}%`}
+            // text={`${percentage}%`}
             strokeWidth={13}
           />
+          <div className="absolute inset-0 grid h-full w-full place-items-center rounded-full">
+            <div className="flex h-full w-full flex-col items-center justify-center">
+              <span className="text-2xl font-bold">70%</span>
+              <span className="text-center text-[10px]">
+                Goal <br />
+                Completed
+              </span>
+            </div>
+          </div>
         </div>
       </div>
     </Card>
