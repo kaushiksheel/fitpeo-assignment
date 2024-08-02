@@ -38,7 +38,7 @@ const TotalOrderCard = ({
           </div>
 
           <div className="flex items-center justify-between">
-            <p className="text-3xl font-bold text-white">
+            <p className="text-xl font-bold text-white lg:text-2xl xl:text-3xl">
               {isRevenue ? (
                 <>${<NumberTicker value={typeCount} direction="up" />}k</>
               ) : (

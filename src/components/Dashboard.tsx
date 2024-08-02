@@ -17,7 +17,7 @@ const Dashboard = () => {
 
           <RecentOrders />
         </div>
-        <div className="flex w-full flex-col gap-7 lg:col-span-2">
+        <div className="mt-6 flex w-full flex-col gap-7 lg:col-span-2 lg:mt-0">
           <NetProfit />
           <FeaturedList />
           <CustomerFeedback />
