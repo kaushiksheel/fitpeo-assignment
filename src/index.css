@@ -1,0 +1,22 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+@layer base {
+  body {
+    font-family: 'Nunito', sans-serif;
+    background-color: #131314;
+    color: #fff;
+    
+
+  }
+}
+
+.CircularProgressbar {
+  stroke: white ;
+}
+.CircularProgressbar-path {
+  stroke: #7094FD !important;
+}
+
