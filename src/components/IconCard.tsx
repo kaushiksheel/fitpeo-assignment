@@ -18,7 +18,7 @@ export const IconCard = ({ icon, title, bgColor }: IconCardProps) => {
         </div>
         <p>{title}</p>
       </div>
-      <button className="group-transform grid h-6 w-6 place-content-center rounded-full bg-lighgGray transition-transform duration-300 ease-in-out group-hover:translate-x-1">
+      <button className="group-transform grid h-7 w-7 place-content-center rounded-full bg-lightGray transition-transform duration-300 ease-in-out group-hover:translate-x-1">
         <IoIosArrowForward className="size-4 text-white" />
       </button>
     </div>
