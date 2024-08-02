@@ -9,7 +9,7 @@ const Dashboard = () => {
   return (
     <div className="w-full">
       <h1 className="text-2xl font-semibold">Dashboard</h1>
-      <div className="mt-3 grid h-full w-full gap-7 lg:grid-cols-6">
+      <div className="mt-3 h-full w-full gap-7 lg:grid lg:grid-cols-6">
         <div className="flex w-full flex-col space-y-7 lg:col-span-4">
           <OrderRecords />
 
